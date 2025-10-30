@@ -1,0 +1,185 @@
+body {
+    margin: 0;
+    font-family: "Sofia", sans-serif;
+}
+
+.first {
+    background-color: #D4F6FF;
+    text-align: center;
+    position: relative;
+    padding-bottom: 50px;
+}
+
+h1 {
+    font-size: 80px;
+    margin: 0;
+    color: #A594F9;
+}
+
+p {
+    font-size: 25px;
+    color: #CDC1FF;
+    margin: 15px 0 0 0;
+}
+
+.img1 {
+    position: absolute;
+    bottom: 0;      
+    left: 0;      
+}
+
+.img2 {
+    position: relative;
+    bottom: 200px;
+    left: 300px;   
+}
+
+.img3 {
+    display: block;
+    width: 200px !important;
+    height: auto;
+    position: absolute;
+    bottom: 0;      
+    left: 50%;      
+    transform: translateX(-50%); 
+}
+
+.img4{
+    position: relative;
+    bottom: 200px;
+    right: 300px;
+}
+
+.img5 {
+    width: 200px;
+    height: auto;
+    position: absolute;
+    bottom: 0;      
+    right: 0;   
+}
+
+.second {
+    background-color: #F5EFFF;
+    text-align: center;
+    padding: 60px 20px;
+    margin-top: 0;
+}
+
+.other-h {
+    font-size: 30px;
+    color: #0F67B1;
+}
+
+.img6 {
+    width: 100px;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    margin: 20px 0;
+}
+
+.one {
+    color: #3FA2F6;
+    font-size: 22px;
+}
+
+.third {
+    background-color: #B2A5FF;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.two {
+    color: black;
+    font-size: 45px;
+    margin-top: 20px;
+}
+
+.alumni-sans-pinstripe-regular {
+    color: black;
+    font-size: 20px;
+}
+
+.img9 {
+    width: 150px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+hr{
+    border: none;
+    border-top: 10px dotted #a594f9ac;
+    width: 7%;
+}
+
+.skill-grid {
+    display: grid;
+    grid-template-columns: 400px 400px; 
+    gap: 20px;
+    margin: 20px auto; 
+    max-width: 800px; 
+}
+
+
+
+@media (min-width: 768px) {
+    .first {
+        padding: 60px 20px;
+    }
+    
+    h1 {
+        font-size: 100px;
+    }
+
+    .img3 {
+        width: 400px;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+}
+
+@media (max-width: 840px) {
+    h1 {
+        font-size: 55px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .two {
+        font-size: 35px;
+    }
+
+    .img1,
+    .img2 {
+        display: none;
+    }
+    
+    .img4, .img5 {
+        position: static;
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: auto;
+    }
+    .img5{
+        margin-bottom: 130px;
+    }
+    
+    table, tbody, tr, td {
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+    }
+
+    .skill-grid {
+        display: grid;
+        grid-template-columns: repeat(1,150px); 
+        justify-content: center;
+    }
+}
